@@ -13,7 +13,7 @@ const Contacts = () => {
   const darkMode = theme.state.darkMode;
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault();//prevent automatic reload of page.
     emailjs
       .sendForm(
         "service_tghsh9u",
