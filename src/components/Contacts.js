@@ -13,32 +13,25 @@ const Contacts = () => {
   );}
   export default Contacts
 
-<<<<<<< HEAD
-  //const formRef = useRef();
-  //const [done, setDone] = useState(false)
-  //const theme = useContext(ThemeContext);
-  //const darkMode = theme.state.darkMode;
-=======
-  const handleSubmit = (e) => {
-    e.preventDefault();//prevent automatic reload of page.
-    emailjs
-      .sendForm(
-        "service_tghsh9u",
-        "template_txhveon",
-        formRef.current,
-        "user_uKCDZGDD9R1zTLlGkxGaI"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setDone(true)
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
->>>>>>> 097c02ff9ac0596d2f5a7402c271b14154e91a47
+ ;// const handleSubmit = (e) => {
+   // e.preventDefault();//prevent automatic reload of page.
+    //emailjs
+     // .sendForm(
+       // "service_tghsh9u",
+        //"template_txhveon",
+        //formRef.current,
+        //"user_uKCDZGDD9R1zTLlGkxGaI"
+      //)
+      //.then(
+        //(result) => {
+         // console.log(result.text);
+          //setDone(true)
+        //},
+        //(error) => {
+        //  console.log(error.text);
+        //}
+      //);
+  //};
 
   //const handleSubmit = (e) => {
    // e.preventDefault();
@@ -97,9 +90,6 @@ const Contacts = () => {
     </div>
   );
 };
-<<<<<<< HEAD
 */}
-=======
 
-export default Contacts;
->>>>>>> 097c02ff9ac0596d2f5a7402c271b14154e91a47
+
