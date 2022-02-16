@@ -1,39 +1,46 @@
+import react from 'react';
 import "./contacts.css";
 import Phone from "../img/phone.png";
 import Email from "../img/email.png";
 
-import { useContext, useRef, useState } from "react";
-import emailjs from "emailjs-com";
-import { ThemeContext } from "../context";
+//import { useContext, useRef, useState } from "react";
+//import emailjs from "emailjs-com";
+//import { ThemeContext } from "../context";
 
 const Contacts = () => {
-  const formRef = useRef();
-  const [done, setDone] = useState(false)
-  const theme = useContext(ThemeContext);
-  const darkMode = theme.state.darkMode;
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_tghsh9u",
-        "template_txhveon",
-        formRef.current,
-        "user_uKCDZGDD9R1zTLlGkxGaI"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setDone(true)
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
-
   return (
-    <div className="c">
+<div><h1>hello world</h1></div>
+  );}
+  export default Contacts
+
+  //const formRef = useRef();
+  //const [done, setDone] = useState(false)
+  //const theme = useContext(ThemeContext);
+  //const darkMode = theme.state.darkMode;
+
+  //const handleSubmit = (e) => {
+   // e.preventDefault();
+    //emailjs
+     // .sendForm(
+     // //  "service_tghsh9u",
+        //"template_txhveon",
+        //formRef.current,
+        ///
+      //"user_uKCDZGDD9R1zTLlGkxGaI"
+    //  )
+      //.then(
+       // (result) => {
+       //   console.log(result.text);
+       //   setDone(true)
+      //  },
+      //  (error) => {
+     //     console.log(error.text);
+     //   }
+    //  );
+ // };
+
+  //return (
+    {/*<div className="c">
       <div className="c-bg"></div>
       <div className="c-wrapper">
         <div className="c-left">
@@ -68,5 +75,4 @@ const Contacts = () => {
     </div>
   );
 };
-
-export default Contacts;
+*/}
